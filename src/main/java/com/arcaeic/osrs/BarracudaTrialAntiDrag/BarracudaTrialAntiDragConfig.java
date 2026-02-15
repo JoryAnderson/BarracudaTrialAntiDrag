@@ -13,7 +13,7 @@ public interface BarracudaTrialAntiDragConfig extends Config
 
 	@ConfigSection(
 			name = "Menu Swaps",
-			description = "Menu swap options for the plugin",
+			description = "Menu swap options for wind facilities",
 			position = 100
 	)
 	String SECTION_MENU_SWAPS = "menuSwaps";
