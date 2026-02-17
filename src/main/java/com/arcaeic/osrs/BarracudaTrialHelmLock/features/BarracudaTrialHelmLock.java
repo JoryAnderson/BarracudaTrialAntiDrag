@@ -1,9 +1,9 @@
-package com.arcaeic.osrs.BarracudaTrialAntiDrag.features;
+package com.arcaeic.osrs.BarracudaTrialHelmLock.features;
 
-import com.arcaeic.osrs.BarracudaTrialAntiDrag.model.*;
-import com.arcaeic.osrs.BarracudaTrialAntiDrag.module.PluginLifecycleComponent;
-import com.arcaeic.osrs.BarracudaTrialAntiDrag.util.BarracudaTrialUtil;
-import com.arcaeic.osrs.BarracudaTrialAntiDrag.BarracudaTrialAntiDragConfig;
+import com.arcaeic.osrs.BarracudaTrialHelmLock.model.*;
+import com.arcaeic.osrs.BarracudaTrialHelmLock.module.PluginLifecycleComponent;
+import com.arcaeic.osrs.BarracudaTrialHelmLock.util.BarracudaTrialUtil;
+import com.arcaeic.osrs.BarracudaTrialHelmLock.BarracudaTrialHelmLockConfig;
 
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Client;
@@ -20,17 +20,17 @@ import javax.inject.Singleton;
 
 @Slf4j
 @Singleton
-public class BarracudaTrialAntiDrag
+public class BarracudaTrialHelmLock
 	implements PluginLifecycleComponent
 {
 
 	private final Client client;
-	private final BarracudaTrialAntiDragConfig config;
+	private final BarracudaTrialHelmLockConfig config;
 
 	private Set<Integer> clickableObjects;
 
 	@Inject
-	public BarracudaTrialAntiDrag(Client client, BarracudaTrialAntiDragConfig config)
+	public BarracudaTrialHelmLock(Client client, BarracudaTrialHelmLockConfig config)
 	{
 		this.client = client;
 		this.config = config;

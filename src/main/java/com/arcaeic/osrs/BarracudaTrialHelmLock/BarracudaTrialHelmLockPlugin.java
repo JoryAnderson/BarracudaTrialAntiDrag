@@ -1,8 +1,8 @@
-package com.arcaeic.osrs.BarracudaTrialAntiDrag;
+package com.arcaeic.osrs.BarracudaTrialHelmLock;
 
 
-import com.arcaeic.osrs.BarracudaTrialAntiDrag.module.ComponentManager;
-import com.arcaeic.osrs.BarracudaTrialAntiDrag.module.BarracudaTrialModule;
+import com.arcaeic.osrs.BarracudaTrialHelmLock.module.ComponentManager;
+import com.arcaeic.osrs.BarracudaTrialHelmLock.module.BarracudaTrialModule;
 
 import com.google.inject.Binder;
 import javax.inject.Inject;
@@ -12,9 +12,9 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Barracuda Trial Anti-Drag"
+	name = "Barracuda Trial Helm Lock"
 )
-public class BarracudaTrialAntiDragPlugin extends Plugin
+public class BarracudaTrialHelmLockPlugin extends Plugin
 {
 	@Inject
 	private ComponentManager componentManager;
@@ -28,14 +28,14 @@ public class BarracudaTrialAntiDragPlugin extends Plugin
 	@Override
 	protected void startUp()
 	{
-		log.info("Barracuda Trial Anti-Drag Started!");
+		log.info("Barracuda Trial Helm Lock Started!");
 		componentManager.onPluginStart();
 	}
 
 	@Override
 	protected void shutDown()
 	{
-		log.info("Barracuda Trial Anti-Drag Stopped!");
+		log.info("Barracuda Trial Helm Lock Stopped!");
 		componentManager.onPluginStop();
 	}
 }

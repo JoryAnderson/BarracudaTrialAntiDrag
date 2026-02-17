@@ -1,4 +1,4 @@
-package com.arcaeic.osrs.BarracudaTrialAntiDrag.model;
+package com.arcaeic.osrs.BarracudaTrialHelmLock.model;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

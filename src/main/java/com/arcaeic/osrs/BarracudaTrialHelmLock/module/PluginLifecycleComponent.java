@@ -1,12 +1,12 @@
-package com.arcaeic.osrs.BarracudaTrialAntiDrag.module;
+package com.arcaeic.osrs.BarracudaTrialHelmLock.module;
 
-import com.arcaeic.osrs.BarracudaTrialAntiDrag.BarracudaTrialAntiDragConfig;
+import com.arcaeic.osrs.BarracudaTrialHelmLock.BarracudaTrialHelmLockConfig;
 import net.runelite.client.events.ConfigChanged;
 
 public interface PluginLifecycleComponent
 {
 	@SuppressWarnings("unused")
-	default boolean isEnabled(BarracudaTrialAntiDragConfig config)
+	default boolean isEnabled(BarracudaTrialHelmLockConfig config)
 	{
 		return true;
 	}

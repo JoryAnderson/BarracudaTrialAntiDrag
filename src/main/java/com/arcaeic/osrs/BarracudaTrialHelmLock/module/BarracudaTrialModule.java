@@ -1,7 +1,7 @@
-package com.arcaeic.osrs.BarracudaTrialAntiDrag.module;
+package com.arcaeic.osrs.BarracudaTrialHelmLock.module;
 
-import com.arcaeic.osrs.BarracudaTrialAntiDrag.BarracudaTrialAntiDragConfig;
-import com.arcaeic.osrs.BarracudaTrialAntiDrag.features.BarracudaTrialAntiDrag;
+import com.arcaeic.osrs.BarracudaTrialHelmLock.BarracudaTrialHelmLockConfig;
+import com.arcaeic.osrs.BarracudaTrialHelmLock.features.BarracudaTrialHelmLock;
 
 import com.google.common.collect.ImmutableSet;
 import com.google.inject.AbstractModule;
@@ -26,11 +26,11 @@ public class BarracudaTrialModule extends AbstractModule
 	@SuppressWarnings("unused")
 	Set<PluginLifecycleComponent> lifecycleComponents(
 		@Named("developerMode") boolean developerMode,
-		BarracudaTrialAntiDrag barracudaTrialAntiDrag
+		BarracudaTrialHelmLock barracudaTrialHelmLock
 	)
 	{
 		var builder = ImmutableSet.<PluginLifecycleComponent>builder()
-			.add(barracudaTrialAntiDrag);
+			.add(barracudaTrialHelmLock);
 
 		// features still in development
 		//noinspection StatementWithEmptyBody
@@ -44,9 +44,9 @@ public class BarracudaTrialModule extends AbstractModule
 	@Provides
 	@Singleton
 	@SuppressWarnings("unused")
-	BarracudaTrialAntiDragConfig provideConfig(ConfigManager configManager)
+	BarracudaTrialHelmLockConfig provideConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(BarracudaTrialAntiDragConfig.class);
+		return configManager.getConfig(BarracudaTrialHelmLockConfig.class);
 	}
 
 }

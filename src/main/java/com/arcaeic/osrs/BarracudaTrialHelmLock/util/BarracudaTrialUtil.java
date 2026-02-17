@@ -1,4 +1,4 @@
-package com.arcaeic.osrs.BarracudaTrialAntiDrag.util;
+package com.arcaeic.osrs.BarracudaTrialHelmLock.util;
 
 import javax.inject.Inject;
 import lombok.RequiredArgsConstructor;

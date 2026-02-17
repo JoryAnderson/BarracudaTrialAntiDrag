@@ -1,12 +1,14 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="BarracudaTrialAntiDragPluginTest" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="com.arcaeic.osrs.BarracudaTrialAntiDrag.BarracudaTrialAntiDragPluginTest" />
-    <module name="BarracudaTrialAntiDrag.test" />
+  <configuration default="false" name="BarracudaTrialHelmLockPluginTest" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="temurin-11" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="com.arcaeic.osrs.BarracudaTrialHelmLock.BarracudaTrialHelmLockPluginTest" />
+    <module name="BarracudaTrialHelmLock.test" />
     <option name="PROGRAM_PARAMETERS" value="--developer-mode" />
     <option name="VM_PARAMETERS" value="-ea" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.arcaeic.osrs.BarracudaTrialAntiDrag.config.*" />
+        <option name="PATTERN" value="com.arcaeic.osrs.BarracudaTrialHelmLock.config.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>
