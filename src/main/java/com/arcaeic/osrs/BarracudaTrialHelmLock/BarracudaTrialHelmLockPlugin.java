@@ -21,28 +21,28 @@ public class BarracudaTrialHelmLockPlugin extends Plugin
 {
 
 	@Inject
-	private Client _client;
+	private Client client;
 
 	@Inject
-	private BarracudaTrialHelmLockConfig _config;
+	private BarracudaTrialHelmLockConfig config;
 
 	@Inject
-	private BarracudaTrialHelmLock _helmLock;
+	private BarracudaTrialHelmLock helmLock;
 
 	@Inject
-	private EventBus _eventBus;
+	private EventBus eventBus;
 
 	@Override
 	protected void startUp()
 	{
 		log.info("Barracuda Trial Helm Lock Started!");
-		_eventBus.register(_helmLock);
+		eventBus.register(helmLock);
 	}
 
 	@Override
 	protected void shutDown()
 	{
-		_eventBus.unregister(_helmLock);
+		eventBus.unregister(helmLock);
 		log.info("Barracuda Trial Helm Lock Stopped!");
 	}
 
